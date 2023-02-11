@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> SOMNATH PROPERTIES | SOMNATH PROPERTIES.COM</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+ 
+    /* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    top: 0px;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('http://localhost/website/finalbg.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.7;
+}
+
+#home h1{
+    color:gold;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:gold;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+    color: white;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+    background-image: url('../TRON(1).jpg');
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+    color: white;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    position: sticky;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+a{
+    padding: 6px 20px;
+    border: 2px solid gold;
+    background-color: black;
+    color: gold;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+a:hover{
+    background-color: gold;
+    color: black;
+}
+.h-primary-center{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Baloo Bhai', cursive;
+    color: white;
+
+}
+body{
+    background-color: black;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    text-align: center;
+    
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+#end a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    background-color: orange;
+    border-color: white;
+    color: white;
+}
+.last{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="http://localhost/MINEIT/LOGO.jpg" alt="MINEIT.com">
+        </div>
+        <ul>
+            <li class="item"><a href="FLAT.html">FLAT</a></li>
+            <!-- <li class="item"><a href="#services-container">SERVICES</a></li> -->
+            <li class="item"><a href="SHOP.html">SHOPS</a></li>
+            <li class="item"><a href="#contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">SOMNATH PROPERTIES</h1>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p> -->
+        <!-- <a href="customer_db.html" target="_blank">EXPLORE</a> -->
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary-center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <!-- <img src="RTT.jpg" alt=""> -->
+                <h2 class="h-secondary center">FLATS</h2>
+                <p class="center">Flats at an affordable rates in whichever place you want </p>
+            </div>
+            <div class="box">
+                <!-- <img src="UM.jpeg" alt=""> -->
+                <h2 class="h-secondary center">SHOPS</h2>
+                <p class="center">Shops at an affordable rates in whichever place you want</p>
+            </div>
+            <!-- <div class="box">
+                <img src="PF.jpg" alt="">
+                <h2 class="h-secondary center">PORTFLIO MANAGEMENT</h2>
+                <p class="center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, culpa suscipit error
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus provident fugiat aliquam minima at explicabo. Earum eveniet quaerat, sunt molestias nesciunt quas! Quis.
+                    sint delectus ab dolorum nam. Debitis facere, incidunt voluptates eos, mollitia voluptatem iste sunt
+                    voluptas beatae facilis labore, omnis sint quae eum.</p>
+            </div> -->
+        </div>
+    </section>
+    <!-- <section id="client-section">
+        <h1 class="h-primary center">TOP CRYPTOCURRENCIES OF THE WORLD</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="BT.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="ETH.jpg" alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src="SOL.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="TRON (1).jpeg" alt="Our Client">
+            </div>
+        </div>
+
+    </section> -->
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; SOMNATH PROPERTIES.com. All rights reserved!
+        </div>
+    </footer>
+    <!-- <footer id="end">
+        <a href="customer_db.html" target="_blank">EXPLORE</a>
+    </footer> -->
+</body>
+
+</html>
